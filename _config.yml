@@ -6,11 +6,11 @@ description: share our work
 permalink: /blog/:year/:month/:day/:title
 ---
 defaults:
-	-
-		scope:
-			path: ""
-			type: "pages"
-		values:
-			layout: "default"
-			author: "green"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "green"
 ---
