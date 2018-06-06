@@ -1,6 +1,6 @@
 name: Green ground
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-cayman
 title: Green ground
 description: share our work
+permalink: /blog/:year/:month/:day/:title
