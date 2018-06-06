@@ -4,7 +4,6 @@ theme: jekyll-theme-cayman
 title: Green ground
 description: share our work
 permalink: /blog/:year/:month/:day/:title
----
 defaults:
   -
     scope:
@@ -13,4 +12,3 @@ defaults:
     values:
       layout: "default"
       author: "green"
----
