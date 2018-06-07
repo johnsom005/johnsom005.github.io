@@ -5,7 +5,7 @@ date: 2018-06-07
 categories: [blog]
 ---
 
-you can use
+you can use<!--more-->
 ```
 {{ (with) page.attr (with) }}
 ```
