@@ -6,7 +6,7 @@ categories: [blog]
 ---
 
 you can use
-'''
+```
 {{ page.attr }}
-'''
+```
 to access page attribute
