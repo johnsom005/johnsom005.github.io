@@ -7,6 +7,6 @@ categories: [blog]
 
 you can use
 ```
-{{ page.attr }}
+{{ (with) page.attr (with) }}
 ```
 to access page attribute
