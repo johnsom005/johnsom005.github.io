@@ -4,13 +4,21 @@ title: Green's Blog
 ---
 	<h1>{{ page.title }}</h1>
 	<p>author: {{ page.author }}</p>
-	<ul class="posts">
-
+  <div id="accordion">
+  
 	{% for post in site.posts %}
-	<li>
-		<span>{{ post.date | date_to_string }}</span> » 
-		<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-		{{ post.excerpt }}(... )
-	</li>
+	<div class="card">
+	  <div class="card-header">
+		<a class="card-link" data-toggle="collapse" href="#collapse{{ post.title | remove: ' ' }}">
+		  <span>{{ post.date | date_to_string }}</span> » {{ post.title }}
+		</a>
+	  </div>
+	  <div id="collapse{{ post.title | remove: ' ' }}" class="collapse" data-parent="#accordion">
+		<div class="card-body">
+		  <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} ...<a href="{{ post.url }}" title="{{ post.title }}">read more</a></p>
+		</div>
+	  </div>
+	</div>
 	{% endfor %}
-	</ul>
+	
+  </div>
